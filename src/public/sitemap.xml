@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://honeypop.co.nz/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://honeypop.co.nz/shop/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://honeypop.co.nz/shop/vanilla/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://honeypop.co.nz/shop/pomegranate/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://honeypop.co.nz/shop/coconut-pear/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://honeypop.co.nz/shop/beeswax/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://honeypop.co.nz/shop/honey-grapefruit/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://honeypop.co.nz/shop/mango/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://honeypop.co.nz/refills/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://honeypop.co.nz/about/our-story/</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://honeypop.co.nz/about/how-it-works/</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://honeypop.co.nz/about/sustainability/</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://honeypop.co.nz/about/our-beekeepers/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://honeypop.co.nz/about/design-system/</loc><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://honeypop.co.nz/ingredients/</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://honeypop.co.nz/cinema/</loc><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://honeypop.co.nz/stockists/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://honeypop.co.nz/wholesale/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://honeypop.co.nz/faq/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://honeypop.co.nz/privacy/</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://honeypop.co.nz/terms/</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
+</urlset>

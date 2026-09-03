@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Honey Pop — Matchbox lid design system</title>
+  <meta
+    name="description"
+    content="The Honey Pop matchbox lid system. Six flavours, one locked composition, Prada-Mode block-colour grammar."
+  />
+  <meta property="og:site_name" content="Honey Pop" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Honey Pop — Matchbox lid design system" />
+  <meta property="og:description" content="The Honey Pop matchbox lid system. Six flavours, one locked composition, Prada-Mode block-colour grammar." />
+  <meta property="og:url" content="https://honeypop.co.nz/about/design-system/" />
+  <meta property="og:image" content="https://honeypop.co.nz/og-image.svg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Honey Pop — Matchbox lid design system" />
+  <meta name="twitter:description" content="The Honey Pop matchbox lid system. Six flavours, one locked composition, Prada-Mode block-colour grammar." />
+  <meta name="twitter:image" content="https://honeypop.co.nz/og-image.svg" />
+  <link rel="canonical" href="https://honeypop.co.nz/about/design-system/" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+  />
+
+  <link rel="stylesheet" href="/tokens.css" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <p class="top-strip">Free NZ delivery over $40</p>
+
+  <div class="layout">
+    <aside class="sidebar" aria-label="Brand status">
+      <a class="sidebar__brand" href="/" aria-label="Honey Pop home">Honey Pop</a>
+      <button class="sidebar__menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span class="sidebar__menu-icon" aria-hidden="true"></span>
+      </button>
+
+      <dl class="sidebar__meta">
+        <dt>Current batch</dt>
+        <dd><span class="chip">03 — Mar 2026</span></dd>
+
+        <dt>Flavours</dt>
+        <dd><span class="chip num">6</span></dd>
+
+        <dt>Stock</dt>
+        <dd><span class="chip chip--in-stock">In stock</span></dd>
+
+        <dt>Next pour</dt>
+        <dd><span class="chip num">12 May</span></dd>
+      </dl>
+
+      <hr class="sidebar__divider" />
+
+      <form class="sidebar__cta-card" action="#join" method="post" aria-label="Join waiting list">
+        <p class="sidebar__cta-label">Join waiting list</p>
+        <div class="sidebar__cta-row">
+          <span aria-hidden="true">🇳🇿</span>
+          <input type="tel" name="phone" placeholder="Mobile number" aria-label="Mobile number" />
+          <button type="submit" aria-label="Join"><svg class="sidebar__arrow-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill-rule="evenodd" clip-rule="evenodd" d="M6 12C6 12.5523 6.44772 13 7 13H14.5858L12.2929 15.2929C11.9024 15.6834 11.9024 16.3166 12.2929 16.7071C12.6834 17.0976 13.3166 17.0976 13.7071 16.7071L17.7071 12.7071C17.8946 12.5196 18 12.2652 18 12C18 11.7348 17.8946 11.4804 17.7071 11.2929L13.7071 7.29289C13.3166 6.90237 12.6834 6.90237 12.2929 7.29289C11.9024 7.68342 11.9024 8.31658 12.2929 8.70711L14.5858 11H7C6.44772 11 6 11.4477 6 12Z" /></svg></button>
+        </div>
+      </form>
+
+      <p class="sidebar__price">From $25 NZD · Refill $8</p>
+
+      <div class="sidebar__currency">
+        <span>Country</span>
+        <select aria-label="Country">
+          <option>NZ $</option>
+          <option>AU $</option>
+          <option>UK £</option>
+        </select>
+      </div>
+
+      <p class="sidebar__foot">© Honey Pop 2026 · Made in NZ</p>
+    </aside>
+
+    <main class="main" id="main">
+
+      <section class="section" aria-labelledby="intro-h1">
+        <p class="section__label">design system</p>
+        <h1 id="intro-h1">Six flavours, one lid system.</h1>
+        <p>Every Honey Pop matchbox lid follows the same composition. Three flat horizontal bands — deep, dominant, light. Brand mark top. Flavour name centre. Honey varietal bottom. Only the palette changes.</p>
+        <p>The grammar is borrowed from Prada Mode’s poster system, which itself descends from the Japanese matchbox label tradition of 1950s–70s Tokyo. Borrowing it back at matchbox scale closes the loop.</p>
+      </section>
+
+      <section class="section" aria-labelledby="rules-h2">
+        <p class="section__label">the rules</p>
+        <h2 id="rules-h2">Five lid principles.</h2>
+        <ol style="padding-left: 1.2em; line-height: 1.7; font-weight: 300; max-width: var(--measure);">
+          <li><strong style="font-weight: 500;">One subject, one dominant colour, one wordmark.</strong> No secondary illustration, no subtitle.</li>
+          <li><strong style="font-weight: 500;">Flat colour only.</strong> One or two inks plus a knockout. No gradient, no photograph, no faux-depth. Risograph-legal.</li>
+          <li><strong style="font-weight: 500;">Warm-saturated palette, never pastel.</strong> The 1950s–70s Japanese palette was saturated by default. Pastel reads as Western craft market.</li>
+          <li><strong style="font-weight: 500;">Honey Pop wordmark in a locked position across all flavours.</strong> Top-left of the deep band, every time.</li>
+          <li><strong style="font-weight: 500;">Flavour mark is hand-drawn, not typeset.</strong> In these mockups it’s typeset for system preview; the production lid gets a custom-drawn wordmark per flavour.</li>
+        </ol>
+      </section>
+
+      <section class="section" aria-labelledby="grid-h2">
+        <p class="section__label">the six</p>
+        <h2 id="grid-h2">The locked range.</h2>
+        <p>Shown at 1.0× (roughly 280×440px on screen — ~35×55mm printed). Each lid is the same component with a different palette.</p>
+
+        <div class="lid-grid">
+          <div>
+            <article class="lid lid--lg" data-flavour="vanilla" aria-label="Vanilla lid">
+              <div class="lid__deep">
+                <span class="lid__brand">Honey Pop</span>
+              </div>
+              <div class="lid__dominant">
+                <span class="lid__flavour">Vanilla</span>
+              </div>
+              <div class="lid__light">
+                <span class="lid__meta">Clover · Canterbury<br />NZ · 100 % honey balm</span>
+              </div>
+            </article>
+            <div class="palette" aria-hidden="true">
+              <span class="palette__swatch" style="background: var(--flavour-vanilla-deep);">#3D2A12</span>
+              <span class="palette__swatch" style="background: var(--flavour-vanilla);">#E6B56A</span>
+              <span class="palette__swatch" style="background: var(--flavour-vanilla-light); color: var(--flavour-vanilla-deep);">#F5EAD4</span>
+            </div>
+          </div>
+
+          <div>
+            <article class="lid lid--lg" data-flavour="pomegranate" aria-label="Pomegranate lid">
+              <div class="lid__deep">
+                <span class="lid__brand">Honey Pop</span>
+              </div>
+              <div class="lid__dominant">
+                <span class="lid__flavour">Pomegranate</span>
+              </div>
+              <div class="lid__light">
+                <span class="lid__meta">Tāwari · Northland<br />NZ · 100 % honey balm</span>
+              </div>
+            </article>
+            <div class="palette" aria-hidden="true">
+              <span class="palette__swatch" style="background: var(--flavour-pomegranate-deep);">#4A0D16</span>
+              <span class="palette__swatch" style="background: var(--flavour-pomegranate);">#A81D2E</span>
+              <span class="palette__swatch" style="background: var(--flavour-pomegranate-light); color: var(--flavour-pomegranate-deep);">#ECD4D1</span>
+            </div>
+          </div>
+
+          <div>
+            <article class="lid lid--lg" data-flavour="coconut-pear" aria-label="Coconut & Pear lid">
+              <div class="lid__deep">
+                <span class="lid__brand">Honey Pop</span>
+              </div>
+              <div class="lid__dominant">
+                <span class="lid__flavour">Coconut<br />&amp; Pear</span>
+              </div>
+              <div class="lid__light">
+                <span class="lid__meta">Rewarewa · West Coast<br />NZ · 100 % honey balm</span>
+              </div>
+            </article>
+            <div class="palette" aria-hidden="true">
+              <span class="palette__swatch" style="background: var(--flavour-coconut-pear-deep);">#2D3E18</span>
+              <span class="palette__swatch" style="background: var(--flavour-coconut-pear);">#6E8E3E</span>
+              <span class="palette__swatch" style="background: var(--flavour-coconut-pear-light); color: var(--flavour-coconut-pear-deep);">#D9E0CE</span>
+            </div>
+          </div>
+
+          <div>
+            <article class="lid lid--lg" data-flavour="beeswax" aria-label="Beeswax Original lid">
+              <div class="lid__deep">
+                <span class="lid__brand">Honey Pop</span>
+              </div>
+              <div class="lid__dominant">
+                <span class="lid__flavour">Beeswax</span>
+              </div>
+              <div class="lid__light">
+                <span class="lid__meta">Mānuka · East Cape<br />NZ · 100 % honey balm</span>
+              </div>
+            </article>
+            <div class="palette" aria-hidden="true">
+              <span class="palette__swatch" style="background: var(--flavour-beeswax-deep);">#1A1410</span>
+              <span class="palette__swatch" style="background: var(--flavour-beeswax);">#C68418</span>
+              <span class="palette__swatch" style="background: var(--flavour-beeswax-light); color: var(--flavour-beeswax-deep);">#F5EAD4</span>
+            </div>
+          </div>
+
+          <div>
+            <article class="lid lid--lg" data-flavour="honey-grapefruit" aria-label="Honey & Grapefruit lid">
+              <div class="lid__deep">
+                <span class="lid__brand">Honey Pop</span>
+              </div>
+              <div class="lid__dominant">
+                <span class="lid__flavour">Honey<br />&amp; Grapefruit</span>
+              </div>
+              <div class="lid__light">
+                <span class="lid__meta">Pōhutukawa · Coromandel<br />NZ · 100 % honey balm</span>
+              </div>
+            </article>
+            <div class="palette" aria-hidden="true">
+              <span class="palette__swatch" style="background: var(--flavour-honey-grapefruit-deep);">#6B2812</span>
+              <span class="palette__swatch" style="background: var(--flavour-honey-grapefruit);">#E4622A</span>
+              <span class="palette__swatch" style="background: var(--flavour-honey-grapefruit-light); color: var(--flavour-honey-grapefruit-deep);">#F2D9C7</span>
+            </div>
+          </div>
+
+          <div>
+            <article class="lid lid--lg" data-flavour="mango" aria-label="Mango lid">
+              <div class="lid__deep">
+                <span class="lid__brand">Honey Pop</span>
+              </div>
+              <div class="lid__dominant">
+                <span class="lid__flavour">Mango</span>
+              </div>
+              <div class="lid__light">
+                <span class="lid__meta">Kāmahi · Westland<br />NZ · 100 % honey balm</span>
+              </div>
+            </article>
+            <div class="palette" aria-hidden="true">
+              <span class="palette__swatch" style="background: var(--flavour-mango-deep);">#5E3A0E</span>
+              <span class="palette__swatch" style="background: var(--flavour-mango);">#E89420</span>
+              <span class="palette__swatch" style="background: var(--flavour-mango-light); color: var(--flavour-mango-deep);">#F5EAD4</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="row-h2">
+        <p class="section__label">flat plan</p>
+        <h2 id="row-h2">Shelf view — six boxes side by side.</h2>
+        <p>Shown at 0.75× to fit a shelf strip. Every lid shares the same internal architecture; the colour palette is what changes.</p>
+        <div class="lid-row">
+          <article class="lid lid--md" data-flavour="vanilla" aria-label="Vanilla">
+            <div class="lid__deep"><span class="lid__brand">Honey Pop</span></div>
+            <div class="lid__dominant"><span class="lid__flavour">Vanilla</span></div>
+            <div class="lid__light"><span class="lid__meta">Clover · Canterbury<br />NZ</span></div>
+          </article>
+          <article class="lid lid--md" data-flavour="pomegranate" aria-label="Pomegranate">
+            <div class="lid__deep"><span class="lid__brand">Honey Pop</span></div>
+            <div class="lid__dominant"><span class="lid__flavour">Pomegranate</span></div>
+            <div class="lid__light"><span class="lid__meta">Tāwari · Northland<br />NZ</span></div>
+          </article>
+          <article class="lid lid--md" data-flavour="coconut-pear" aria-label="Coconut &amp; Pear">
+            <div class="lid__deep"><span class="lid__brand">Honey Pop</span></div>
+            <div class="lid__dominant"><span class="lid__flavour">Coconut<br />&amp; Pear</span></div>
+            <div class="lid__light"><span class="lid__meta">Rewarewa · West Coast<br />NZ</span></div>
+          </article>
+          <article class="lid lid--md" data-flavour="beeswax" aria-label="Beeswax">
+            <div class="lid__deep"><span class="lid__brand">Honey Pop</span></div>
+            <div class="lid__dominant"><span class="lid__flavour">Beeswax</span></div>
+            <div class="lid__light"><span class="lid__meta">Mānuka · East Cape<br />NZ</span></div>
+          </article>
+          <article class="lid lid--md" data-flavour="honey-grapefruit" aria-label="Honey &amp; Grapefruit">
+            <div class="lid__deep"><span class="lid__brand">Honey Pop</span></div>
+            <div class="lid__dominant"><span class="lid__flavour">Honey<br />&amp; Grapefruit</span></div>
+            <div class="lid__light"><span class="lid__meta">Pōhutukawa · Coromandel<br />NZ</span></div>
+          </article>
+          <article class="lid lid--md" data-flavour="mango" aria-label="Mango">
+            <div class="lid__deep"><span class="lid__brand">Honey Pop</span></div>
+            <div class="lid__dominant"><span class="lid__flavour">Mango</span></div>
+            <div class="lid__light"><span class="lid__meta">Kāmahi · Westland<br />NZ</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="anatomy-h2">
+        <p class="section__label">anatomy</p>
+        <h2 id="anatomy-h2">One lid, exploded.</h2>
+        <p>Beeswax at 1.4× with the three bands labelled.</p>
+        <div style="display: grid; grid-template-columns: auto 1fr; gap: var(--space-6); align-items: center; margin-top: var(--space-4);">
+          <article class="lid lid--xl" data-flavour="beeswax" aria-label="Beeswax, scaled up">
+            <div class="lid__deep"><span class="lid__brand">Honey Pop</span></div>
+            <div class="lid__dominant"><span class="lid__flavour">Beeswax</span></div>
+            <div class="lid__light"><span class="lid__meta">Mānuka · East Cape<br />NZ · 100 % honey balm</span></div>
+          </article>
+          <dl class="meta-panel">
+            <dt>Deep band (18 %)</dt><dd>Brand mark. Darkest value. Sets the contrast anchor.</dd>
+            <dt>Dominant band (54 %)</dt><dd>Flavour colour. Saturated, never pastel. All-caps flavour name.</dd>
+            <dt>Light band (28 %)</dt><dd>Honey varietal + region + NZ mark. Mono caps.</dd>
+            <dt>Format</dt><dd>35 × 55 mm · 7:11 ratio</dd>
+            <dt>Inks</dt><dd>3 · Risograph-legal</dd>
+            <dt>Type</dt><dd>Space Grotesk bold · caps · tight tracking</dd>
+          </dl>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="influences-h2">
+        <p class="section__label">where this comes from</p>
+        <h2 id="influences-h2">Influences.</h2>
+        <p>Three lineages converge on the matchbox lid. Full catalogue in <a href="/about/design-system/#">visual-language-teardown.md</a>.</p>
+        <ul style="list-style: none; padding: 0; margin-top: var(--space-3); display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: var(--space-3);">
+          <li style="padding: var(--space-3); background: var(--paper-tinted-soft); border-radius: var(--radius-card);">
+            <h4 style="margin: 0 0 var(--space-1); font-size: 1rem; color: var(--ink);">Japanese matchbox labels</h4>
+            <p style="margin: 0; font-size: var(--fs-small); color: var(--ink-muted); font-weight: 300;">1920s–70s Tokyo printing. Flat saturated ink, hand-lettered wordmark, single subject per 35×55mm frame.</p>
+          </li>
+          <li style="padding: var(--space-3); background: var(--paper-tinted-soft); border-radius: var(--radius-card);">
+            <h4 style="margin: 0 0 var(--space-1); font-size: 1rem; color: var(--ink);">Prada Mode posters</h4>
+            <p style="margin: 0; font-size: var(--fs-small); color: var(--ink-muted); font-weight: 300;">Identity by 2x4 (Michael Rock, Donnie Luu). Flat colour blocks, tight grid, one dominant wordmark. Miami / HK / Paris / Tokyo / Seoul.</p>
+          </li>
+          <li style="padding: var(--space-3); background: var(--paper-tinted-soft); border-radius: var(--radius-card);">
+            <h4 style="margin: 0 0 var(--space-1); font-size: 1rem; color: var(--ink);">Apothecary tins</h4>
+            <p style="margin: 0; font-size: var(--fs-small); color: var(--ink-muted); font-weight: 300;">Utilitarian packaging designed to look handsome with wear. The scuffs become part of the object.</p>
+          </li>
+        </ul>
+        <a class="cta-link" href="/about/our-story">Read the full story</a>
+      </section>
+
+    </main>
+  </div>
+
+  <footer class="footer" aria-label="Site footer">
+    <div class="footer__stack">
+      <h5>Product</h5>
+      <ul>
+        <li><a href="/shop">Shop</a></li>
+        <li><a href="/shop">Refills</a></li>
+        <li><a href="/#stockists-h2">Stockists</a></li>
+      </ul>
+    </div>
+    <div class="footer__stack">
+      <h5>About</h5>
+      <ul>
+        <li><a href="/about/our-story">Our story</a></li>
+        <li><a href="/about/how-it-works">How it works</a></li>
+        <li><a href="/about/sustainability">Sustainability</a></li>
+      </ul>
+    </div>
+    <div class="footer__stack">
+      <h5>Info</h5>
+      <ul>
+        <li><a href="/faq">FAQ</a></li>
+        <li><a href="/ingredients">Ingredients</a></li>
+        <li><a href="mailto:hello@honeypop.co.nz?subject=Wholesale">Wholesale</a></li>
+        <li><a href="mailto:hello@honeypop.co.nz">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__copy">
+      <span>© Honey Pop 2026 · NZ</span>
+      <span><a href="/privacy">Privacy</a> · <a href="/terms">Terms</a></span>
+    </div>
+  </footer>
+  <script type="module" src="/mobile-menu.js"></script>
+</body>
+</html>

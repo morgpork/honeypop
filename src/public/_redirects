@@ -1,0 +1,26 @@
+# Trailing-slash normalization
+/shop/vanilla /shop/vanilla/ 301
+/shop/pomegranate /shop/pomegranate/ 301
+/shop/coconut-pear /shop/coconut-pear/ 301
+/shop/beeswax /shop/beeswax/ 301
+/shop/honey-grapefruit /shop/honey-grapefruit/ 301
+/shop/mango /shop/mango/ 301
+/about/our-story /about/our-story/ 301
+/about/how-it-works /about/how-it-works/ 301
+/about/sustainability /about/sustainability/ 301
+/about/our-beekeepers /about/our-beekeepers/ 301
+/about/design-system /about/design-system/ 301
+
+# Legacy HoneyBum slugs — forward to Honey Pop equivalents
+/honey-bum /  301
+/honeybum /  301
+
+# Aliases
+/noses /about/our-beekeepers/ 301
+/our-noses /about/our-beekeepers/ 301
+/sustainability /about/sustainability/ 301
+/story /about/our-story/ 301
+/how-it-works /about/how-it-works/ 301
+
+# 404 fallback
+/* /404.html 404

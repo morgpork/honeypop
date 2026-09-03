@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Honey Pop — Refills</title>
+  <meta name="description" content="Refill any Honey Pop matchbox for $8. Six flavours, ships in a card envelope, slides in like a SIM card." />
+  <meta property="og:site_name" content="Honey Pop" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Honey Pop — Refills" />
+  <meta property="og:description" content="Refill any Honey Pop matchbox for $8. Six flavours, ships in a card envelope, slides in like a SIM card." />
+  <meta property="og:url" content="https://honeypop.co.nz/refills/" />
+  <meta property="og:image" content="https://honeypop.co.nz/og-image.svg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Honey Pop — Refills" />
+  <meta name="twitter:description" content="Refill any Honey Pop matchbox for $8. Six flavours, ships in a card envelope, slides in like a SIM card." />
+  <meta name="twitter:image" content="https://honeypop.co.nz/og-image.svg" />
+  <link rel="canonical" href="https://honeypop.co.nz/refills/" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+  />
+
+  <link rel="stylesheet" href="/tokens.css" />
+  <link rel="stylesheet" href="/style.css" />
+
+  <style>
+    .range--lids {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      gap: var(--space-3);
+      justify-content: center;
+      justify-items: center;
+      background: transparent;
+      margin-top: var(--space-3);
+    }
+    .lid-link {
+      display: inline-block;
+      text-decoration: none;
+      transition: transform 200ms ease;
+      text-align: center;
+    }
+    .lid-link:hover { transform: translateY(-2px); }
+    .lid-link__price {
+      margin: 0.5rem 0 0;
+      font-family: var(--font-mono);
+      font-size: var(--fs-meta);
+      letter-spacing: var(--ls-caps);
+      text-transform: uppercase;
+      color: var(--ink-muted);
+    }
+    @media (max-width: 720px) {
+      .range--lids { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <p class="top-strip">Free NZ delivery over $40</p>
+
+  <div class="layout">
+    <aside class="sidebar" aria-label="Brand status">
+      <a class="sidebar__brand" href="/" aria-label="Honey Pop home">Honey Pop</a>
+      <button class="sidebar__menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span class="sidebar__menu-icon" aria-hidden="true"></span>
+      </button>
+
+      <dl class="sidebar__meta">
+        <dt>Current batch</dt>
+        <dd><span class="chip">03 — Mar 2026</span></dd>
+        <dt>Flavours</dt>
+        <dd><span class="chip num">6</span></dd>
+        <dt>Stock</dt>
+        <dd><span class="chip chip--in-stock">In stock</span></dd>
+        <dt>Next pour</dt>
+        <dd><span class="chip num">12 May</span></dd>
+      </dl>
+
+      <hr class="sidebar__divider" />
+
+      <form class="sidebar__cta-card" action="#join" method="post" aria-label="Join waiting list">
+        <p class="sidebar__cta-label">Join waiting list</p>
+        <div class="sidebar__cta-row">
+          <span aria-hidden="true">🇳🇿</span>
+          <input type="tel" name="phone" placeholder="Mobile number" aria-label="Mobile number" />
+          <button type="submit" aria-label="Join"><svg class="sidebar__arrow-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill-rule="evenodd" clip-rule="evenodd" d="M6 12C6 12.5523 6.44772 13 7 13H14.5858L12.2929 15.2929C11.9024 15.6834 11.9024 16.3166 12.2929 16.7071C12.6834 17.0976 13.3166 17.0976 13.7071 16.7071L17.7071 12.7071C17.8946 12.5196 18 12.2652 18 12C18 11.7348 17.8946 11.4804 17.7071 11.2929L13.7071 7.29289C13.3166 6.90237 12.6834 6.90237 12.2929 7.29289C11.9024 7.68342 11.9024 8.31658 12.2929 8.70711L14.5858 11H7C6.44772 11 6 11.4477 6 12Z" /></svg></button>
+        </div>
+      </form>
+
+      <p class="sidebar__price">From $25 NZD · Refill $8</p>
+
+      <div class="sidebar__currency">
+        <span>Country</span>
+        <select aria-label="Country">
+          <option>NZ $</option>
+          <option>AU $</option>
+          <option>UK £</option>
+        </select>
+      </div>
+
+      <p class="sidebar__foot">© Honey Pop 2026 · Made in NZ</p>
+    </aside>
+
+    <main class="main" id="main">
+
+      <section class="section" aria-labelledby="intro-h1">
+        <p class="section__label">refills</p>
+        <h1 id="intro-h1">Refill your matchbox.</h1>
+        <p>Eight dollars per insert, six flavours. Ships in a card envelope with no plastic. Slides in like a SIM card.</p>
+      </section>
+
+      <section class="section" aria-labelledby="how-h2">
+        <p class="section__label">how it works</p>
+        <h2 id="how-h2">Made to keep.</h2>
+        <p>Buy the matchbox once — the first insert is installed. About three months later the balm runs out. You order a refill on this page, it arrives in a card envelope a few days later, the empty insert slides out and the new one slides in. The box stays.</p>
+        <a class="cta-link" href="/about/how-it-works">How refills work — the long version</a>
+      </section>
+
+      <section class="section" aria-labelledby="range-h2">
+        <p class="section__label">the six</p>
+        <h2 id="range-h2">Pick a flavour.</h2>
+        <p>Every refill fits every Honey Pop matchbox. Mix flavours across the year or stay with your favourite.</p>
+
+        <div class="range range--lids" role="list">
+          <a class="lid-link" href="/shop/vanilla/" aria-label="Vanilla refill — $8 NZD">
+            <article class="lid lid--md" data-flavour="vanilla">
+              <div class="lid__deep"><span class="lid__brand">Honey Pop</span></div>
+              <div class="lid__dominant"><span class="lid__flavour">Vanilla</span></div>
+              <div class="lid__light"><span class="lid__meta">Clover · Canterbury<br />NZ · refill insert</span></div>
+            </article>
+            <p class="lid-link__price">$8 NZD · Refill</p>
+          </a>
+
+          <a class="lid-link" href="/shop/pomegranate/" aria-label="Pomegranate refill — $8 NZD">
+            <article class="lid lid--md" data-flavour="pomegranate">
+              <div class="lid__deep"><span class="lid__brand">Honey Pop</span></div>
+              <div class="lid__dominant"><span class="lid__flavour">Pomegranate</span></div>
+              <div class="lid__light"><span class="lid__meta">Tāwari · Northland<br />NZ · refill insert</span></div>
+            </article>
+            <p class="lid-link__price">$8 NZD · Refill</p>
+          </a>
+
+          <a class="lid-link" href="/shop/coconut-pear/" aria-label="Coconut & Pear refill — $8 NZD">
+            <article class="lid lid--md" data-flavour="coconut-pear">
+              <div class="lid__deep"><span class="lid__brand">Honey Pop</span></div>
+              <div class="lid__dominant"><span class="lid__flavour">Coconut &amp; Pear</span></div>
+              <div class="lid__light"><span class="lid__meta">Rewarewa · West Coast<br />NZ · refill insert</span></div>
+            </article>
+            <p class="lid-link__price">$8 NZD · Refill</p>
+          </a>
+
+          <a class="lid-link" href="/shop/beeswax/" aria-label="Beeswax Original refill — $8 NZD">
+            <article class="lid lid--md" data-flavour="beeswax">
+              <div class="lid__deep"><span class="lid__brand">Honey Pop</span></div>
+              <div class="lid__dominant"><span class="lid__flavour">Beeswax</span></div>
+              <div class="lid__light"><span class="lid__meta">Mānuka · East Cape<br />NZ · refill insert</span></div>
+            </article>
+            <p class="lid-link__price">$8 NZD · Refill</p>
+          </a>
+
+          <a class="lid-link" href="/shop/honey-grapefruit/" aria-label="Honey & Grapefruit refill — $8 NZD">
+            <article class="lid lid--md" data-flavour="honey-grapefruit">
+              <div class="lid__deep"><span class="lid__brand">Honey Pop</span></div>
+              <div class="lid__dominant"><span class="lid__flavour">Honey &amp; Grapefruit</span></div>
+              <div class="lid__light"><span class="lid__meta">Pōhutukawa · Coromandel<br />NZ · refill insert</span></div>
+            </article>
+            <p class="lid-link__price">$8 NZD · Refill</p>
+          </a>
+
+          <a class="lid-link" href="/shop/mango/" aria-label="Mango refill — $8 NZD">
+            <article class="lid lid--md" data-flavour="mango">
+              <div class="lid__deep"><span class="lid__brand">Honey Pop</span></div>
+              <div class="lid__dominant"><span class="lid__flavour">Mango</span></div>
+              <div class="lid__light"><span class="lid__meta">Kāmahi · Westland<br />NZ · refill insert</span></div>
+            </article>
+            <p class="lid-link__price">$8 NZD · Refill</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="schedule-h2">
+        <p class="section__label">batch schedule</p>
+        <h2 id="schedule-h2">Pour calendar.</h2>
+        <p>We pour four batches a year so the honey stays seasonal. Refills ship within a week of each batch landing.</p>
+        <ul style="list-style: none; padding: 0; margin-top: var(--space-3); display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: var(--space-3);">
+          <li style="padding: var(--space-3); background: var(--paper-tinted-soft); border-radius: var(--radius-card);">
+            <span style="font-family: var(--font-mono); font-size: var(--fs-meta); letter-spacing: var(--ls-caps); text-transform: uppercase; color: var(--terracotta);">Batch 03</span>
+            <p style="margin: 0.3rem 0 0; font-family: var(--font-serif); font-weight: 500;">March 2026 — shipping now</p>
+          </li>
+          <li style="padding: var(--space-3); background: var(--paper-tinted-soft); border-radius: var(--radius-card);">
+            <span style="font-family: var(--font-mono); font-size: var(--fs-meta); letter-spacing: var(--ls-caps); text-transform: uppercase; color: var(--terracotta);">Batch 04</span>
+            <p style="margin: 0.3rem 0 0; font-family: var(--font-serif); font-weight: 500;">May 2026 — waitlist opens April</p>
+          </li>
+          <li style="padding: var(--space-3); background: var(--paper-tinted-soft); border-radius: var(--radius-card);">
+            <span style="font-family: var(--font-mono); font-size: var(--fs-meta); letter-spacing: var(--ls-caps); text-transform: uppercase; color: var(--terracotta);">Batch 05</span>
+            <p style="margin: 0.3rem 0 0; font-family: var(--font-serif); font-weight: 500;">August 2026</p>
+          </li>
+          <li style="padding: var(--space-3); background: var(--paper-tinted-soft); border-radius: var(--radius-card);">
+            <span style="font-family: var(--font-mono); font-size: var(--fs-meta); letter-spacing: var(--ls-caps); text-transform: uppercase; color: var(--terracotta);">Batch 06</span>
+            <p style="margin: 0.3rem 0 0; font-family: var(--font-serif); font-weight: 500;">November 2026</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section" aria-labelledby="subscribe-h2">
+        <p class="section__label">on repeat</p>
+        <h2 id="subscribe-h2">Auto-refill (coming).</h2>
+        <p>A refill every three months, automatically, at $8 each. Cancel any time. Unlocks with Batch 05 — <a href="mailto:hello@honeypop.co.nz?subject=Auto-refill">email us to be notified</a> when it opens.</p>
+      </section>
+
+    </main>
+  </div>
+
+  <footer class="footer" aria-label="Site footer">
+    <div class="footer__stack">
+      <h5>Product</h5>
+      <ul>
+        <li><a href="/shop">Shop</a></li>
+        <li><a href="/refills">Refills</a></li>
+        <li><a href="/stockists">Stockists</a></li>
+      </ul>
+    </div>
+    <div class="footer__stack">
+      <h5>About</h5>
+      <ul>
+        <li><a href="/about/our-story">Our story</a></li>
+        <li><a href="/about/how-it-works">How it works</a></li>
+        <li><a href="/about/sustainability">Sustainability</a></li>
+      </ul>
+    </div>
+    <div class="footer__stack">
+      <h5>Info</h5>
+      <ul>
+        <li><a href="/faq">FAQ</a></li>
+        <li><a href="/ingredients">Ingredients</a></li>
+        <li><a href="/wholesale">Wholesale</a></li>
+        <li><a href="mailto:hello@honeypop.co.nz">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer__copy">
+      <span>© Honey Pop 2026 · NZ</span>
+      <span><a href="/privacy">Privacy</a> · <a href="/terms">Terms</a></span>
+    </div>
+  </footer>
+  <script type="module" src="/mobile-menu.js"></script>
+</body>
+</html>

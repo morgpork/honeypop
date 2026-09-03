@@ -1,0 +1,11 @@
+node_modules
+dist
+.DS_Store
+.gstack/
+
+# Local machine state
+.claude/settings.local.json
+
+# Third-party reference captures from ffern.co, kept locally for design
+# reference only. Not ours to republish from a public repo.
+docs/reference/ffern/

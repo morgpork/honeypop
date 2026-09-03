@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Honey Pop — Stockists</title>
+  <meta name="description" content="Where to find Honey Pop matchboxes in New Zealand and (soon) beyond. First-run stockists landing April–May 2026." />
+  <meta property="og:site_name" content="Honey Pop" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Honey Pop — Stockists" />
+  <meta property="og:description" content="Where to find Honey Pop matchboxes in New Zealand and (soon) beyond. First-run stockists landing April–May 2026." />
+  <meta property="og:url" content="https://honeypop.co.nz/stockists/" />
+  <meta property="og:image" content="https://honeypop.co.nz/og-image.svg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Honey Pop — Stockists" />
+  <meta name="twitter:description" content="Where to find Honey Pop matchboxes in New Zealand and (soon) beyond. First-run stockists landing April–May 2026." />
+  <meta name="twitter:image" content="https://honeypop.co.nz/og-image.svg" />
+  <link rel="canonical" href="https://honeypop.co.nz/stockists/" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Space+Mono:wght@400;700&display=swap"
+  />
+
+  <link rel="stylesheet" href="/tokens.css" />
+  <link rel="stylesheet" href="/style.css" />
+
+  <style>
+    .stockist-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: var(--space-3);
+      margin-top: var(--space-3);
+    }
+    .stockist-card {
+      padding: var(--space-3);
+      background: var(--paper-tinted-soft);
+      border-radius: var(--radius-card);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-1);
+    }
+    .stockist-card h4 {
+      margin: 0;
+      font-family: var(--font-serif);
+      font-size: 1.125rem;
+      font-weight: 500;
+      color: var(--ink);
+    }
+    .stockist-card__region {
+      font-family: var(--font-mono);
+      font-size: var(--fs-meta);
+      letter-spacing: var(--ls-caps);
+      text-transform: uppercase;
+      color: var(--terracotta);
+    }
+    .stockist-card__address,
+    .stockist-card__hours {
+      font-size: var(--fs-small);
+      color: var(--ink-muted);
+      font-weight: 300;
+      margin: 0;
+    }
+    .stockist-card__status {
+      font-family: var(--font-mono);
+      font-size: var(--fs-meta);
+      letter-spacing: var(--ls-caps);
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      margin-top: 0.3rem;
+    }
+    .stockist-card__status--live { color: var(--flavour-coconut-pear); }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <p class="top-strip">Free NZ delivery over $40</p>
+
+  <div class="layout">
+    <aside class="sidebar" aria-label="Brand status">
+      <a class="sidebar__brand" href="/" aria-label="Honey Pop home">Honey Pop</a>
+      <button class="sidebar__menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span class="sidebar__menu-icon" aria-hidden="true"></span>
+      </button>
+
+      <dl class="sidebar__meta">
+        <dt>Current batch</dt>
+        <dd><span class="chip">03 — Mar 2026</span></dd>
+        <dt>Flavours</dt>
+        <dd><span class="chip num">6</span></dd>
+        <dt>Stock</dt>
+        <dd><span class="chip chip--in-stock">In stock</span></dd>
+        <dt>Next pour</dt>
+        <dd><span class="chip num">12 May</span></dd>
+      </dl>
+
+      <hr class="sidebar__divider" />
+
+      <form class="sidebar__cta-card" action="#join" method="post" aria-label="Join waiting list">
+        <p class="sidebar__cta-label">Join waiting list</p>
+        <div class="sidebar__cta-row">
+          <span aria-hidden="true">🇳🇿</span>
+          <input type="tel" name="phone" placeholder="Mobile number" aria-label="Mobile number" />
+          <button type="submit" aria-label="Join"><svg class="sidebar__arrow-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill-rule="evenodd" clip-rule="evenodd" d="M6 12C6 12.5523 6.44772 13 7 13H14.5858L12.2929 15.2929C11.9024 15.6834 11.9024 16.3166 12.2929 16.7071C12.6834 17.0976 13.3166 17.0976 13.7071 16.7071L17.7071 12.7071C17.8946 12.5196 18 12.2652 18 12C18 11.7348 17.8946 11.4804 17.7071 11.2929L13.7071 7.29289C13.3166 6.90237 12.6834 6.90237 12.2929 7.29289C11.9024 7.68342 11.9024 8.31658 12.2929 8.70711L14.5858 11H7C6.44772 11 6 11.4477 6 12Z" /></svg></button>
+        </div>
+      </form>
+
+      <p class="sidebar__price">From $25 NZD · Refill $8</p>
+
+      <div class="sidebar__currency">
+        <span>Country</span>
+        <select aria-label="Country">
+          <option>NZ $</option>
+          <option>AU $</option>
+          <option>UK £</option>
+        </select>
+      </div>
+
+      <p class="sidebar__foot">© Honey Pop 2026 · Made in NZ</p>
+    </aside>
+
+    <main class="main" id="main">
+
+      <section class="section" aria-labelledby="intro-h1">
+        <p class="section__label">stockists</p>
+        <h1 id="intro-h1">Find Honey Pop at.</h1>
+        <p>First-run retail partners landing through April and May 2026. Sign-up list below; full map when partners confirm.</p>
+      </section>
+
+      <section class="section" aria-labelledby="regions-h2">
+        <p class="section__label">aotearoa</p>
+        <h2 id="regions-h2">Domestic retail — NZ.</h2>
+        <p>Placeholder entries while retailer contracts land. Real names and addresses replace these as stock ships.</p>
+
+        <div class="stockist-list">
+          <article class="stockist-card">
+            <span class="stockist-card__region">Tāmaki Makaurau — Auckland</span>
+            <h4>Stockist TBA</h4>
+            <p class="stockist-card__address">Central city · address pending</p>
+            <p class="stockist-card__hours">Hours pending</p>
+            <span class="stockist-card__status">Opens May 2026</span>
+          </article>
+
+          <article class="stockist-card">
+            <span class="stockist-card__region">Te Whanganui-a-Tara — Wellington</span>
+            <h4>Stockist TBA</h4>
+            <p class="stockist-card__address">Cuba Quarter · address pending</p>
+            <p class="stockist-card__hours">Hours pending</p>
+            <span class="stockist-card__status">Opens April 2026</span>
+          </article>
+
+          <article class="stockist-card">
+            <span class="stockist-card__region">Ōtautahi — Christchurch</span>
+            <h4>Stockist TBA</h4>
+            <p class="stockist-card__address">Riverside · address pending</p>
+            <p class="stockist-card__hours">Hours pending</p>
+            <span class="stockist-card__status">Opens May 2026</span>
+          </article>
+
+          <article class="stockist-card">
+            <span class="stockist-card__region">Ōtepoti — Dunedin</span>
+            <h4>Stockist TBA</h4>
+            <p class="stockist-card__address">Octagon · address pending</p>
+            <p class="stockist-card__hours">Hours pending</p>
+            <span class="stockist-card__status">Opens June 2026</span>
+          </article>
+
+          <article class="stockist-card">
+            <span class="stockist-card__region">Whakatū — Nelson</span>
+            <h4>Stockist TBA</h4>
+            <p class="stockist-card__address">Trafalgar Street · address pending</p>
+            <p class="stockist-card__hours">Hours pending</p>
+            <span class="stockist-card__status">Opens June 2026</span>
+          </article>
+
+          <article class="stockist-card">
+            <span class="stockist-card__region">NZ-wide</span>
+            <h4>honeypop.co.nz</h4>
+            <p class="stockist-card__address">Free shipping over $40 NZD</p>
+            <p class="stockist-card__hours">Always open</p>
+            <span class="stockist-card__status stockist-card__status--live">Live now</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="international-h2">
+        <p class="section__label">international</p>
+        <h2 id="international-h2">International — coming soon.</h2>
+        <p>AU / UK / US partners unlock with Batch 04 (July 2026). Retailers outside NZ interested in stocking Honey Pop — email <a href="mailto:hello@honeypop.co.nz?subject=Wholesale%20international">hello@honeypop.co.nz</a> with your region and we’ll get in touch.</p>
+      </section>
+
+      <section class="section" aria-labelledby="wholesale-h2">
+        <p class="section__label">wholesale</p>
+        <h2 id="wholesale-h2">Want Honey Pop on your shelf?</h2>
+        <p>We work with independent bookshops, design-led grocers, barbers, and lifestyle retailers. Small MOQs, quick dispatch, supportive margins.</p>
+        <a class="cta-link" href="/wholesale">Wholesale details</a>
+      </section>
+
+    </main>
+  </div>
+
+  <footer class="footer" aria-label="Site footer">
+    <div class="footer__stack">
+      <h5>Product</h5>
+      <ul>
+        <li><a href="/shop">Shop</a></li>
+        <li><a href="/shop">Refills</a></li>
+        <li><a href="/stockists">Stockists</a></li>
+      </ul>
+    </div>
+    <div class="footer__stack">
+      <h5>About</h5>
+      <ul>
+        <li><a href="/about/our-story">Our story</a></li>
+        <li><a href="/about/how-it-works">How it works</a></li>
+        <li><a href="/about/sustainability">Sustainability</a></li>
+      </ul>
+    </div>
+    <div class="footer__stack">
+      <h5>Info</h5>
+      <ul>
+        <li><a href="/faq">FAQ</a></li>
+        <li><a href="/ingredients">Ingredients</a></li>
+        <li><a href="/wholesale">Wholesale</a></li>
+        <li><a href="mailto:hello@honeypop.co.nz">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer__copy">
+      <span>© Honey Pop 2026 · NZ</span>
+      <span><a href="/privacy">Privacy</a> · <a href="/terms">Terms</a></span>
+    </div>
+  </footer>
+  <script type="module" src="/mobile-menu.js"></script>
+</body>
+</html>
