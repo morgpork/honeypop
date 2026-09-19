@@ -37,7 +37,7 @@ NZ honey lip balm in a wooden matchbox. Refillable insert. Four ingredients, six
 - Vite 8 (multi-page static site) — 22 `rollupOptions.input` routes in `vite.config.js`
 - Vanilla HTML/CSS, no framework
 - `src/tokens.css` — design tokens (Ffern-exact palette + per-flavour lid palettes)
-- `src/style.css` — chassis CSS (sidebar / section / hero / lid / tile / split / etc.)
+- `src/style.css` — chassis CSS (sidebar / section / hero / lid / split / etc.)
 - `src/public/` — static copy-through (robots.txt, sitemap.xml, og-image.svg, _headers, _redirects)
 - Google Fonts: Newsreader (serif — body + headings), Space Grotesk (display — lid component only), Space Mono (data chips)
 - Cloudflare Pages deploy target — `wrangler.toml` + `src/public/_headers` + `src/public/_redirects`

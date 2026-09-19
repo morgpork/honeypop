@@ -619,84 +619,22 @@ button {
   content: ' →';
 }
 
-/* ─── Range — tinted tile grid (/ + /shop) ───────────────── */
+/* ─── Range — lid grid (/ + /shop + flavours + /refills) ──── */
 
 .range {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1px;
-  background: var(--hairline);
   margin-top: var(--space-3);
 }
 
 /* Lids are fixed-size objects, so wrap them to fit the column rather than
    fixing a column count: three across at desktop, fewer where it narrows.
-   This lives here, not in page <style> blocks, because the build emits this
-   stylesheet after those blocks, so .range used to win there. */
+   Keep this out of page <style> blocks: the dev server loads this stylesheet
+   before them and the build after, so a rule shared with them wins in one
+   and loses in the other. */
 .range--lids {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: var(--space-3);
-  background: transparent;
-}
-
-.tile {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  aspect-ratio: 1;
-  padding: var(--space-3);
-  background: var(--tint, var(--tile-cream));
-  color: var(--ink);
-  text-decoration: none;
-  overflow: hidden;
-  transition: transform 200ms ease;
-}
-
-.tile:hover {
-  text-decoration: none;
-  color: var(--ink);
-}
-
-/* Each flavour maps to a soft Ffern-style tint */
-.tile[data-flavour='vanilla']          { --tint: var(--tile-cream); }
-.tile[data-flavour='pomegranate']      { --tint: var(--tile-rose); }
-.tile[data-flavour='coconut-pear']     { --tint: var(--tile-sage); }
-.tile[data-flavour='beeswax']          { --tint: var(--tile-peach); }
-.tile[data-flavour='honey-grapefruit'] { --tint: var(--tile-peach); }
-.tile[data-flavour='mango']            { --tint: var(--tile-cream); }
-
-.tile__brand {
-  font-family: var(--font-mono);
-  font-size: var(--fs-meta);
-  font-weight: 400;
-  letter-spacing: var(--ls-caps);
-  text-transform: uppercase;
-  color: var(--ink-muted);
-}
-
-.tile__name {
-  font-family: var(--font-serif);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.375rem;
-  line-height: 1.1;
-  color: var(--ink);
-}
-
-.tile__meta {
-  margin-top: 0.3rem;
-  font-family: var(--font-mono);
-  font-size: var(--fs-meta);
-  letter-spacing: var(--ls-caps);
-  text-transform: uppercase;
-  color: var(--ink-muted);
-}
-
-.tile__price {
-  color: var(--ink);
 }
 
 /* ─── Split (image-left / text-right) ───────────────────── */
@@ -843,15 +781,6 @@ button {
   color: var(--ink-muted);
   text-align: center;
   letter-spacing: var(--ls-body);
-}
-
-/* ─── Note aside (founder portrait + copy) ───────────────── */
-
-.note-aside {
-  display: grid;
-  grid-template-columns: minmax(0, 0.7fr) minmax(0, 1fr);
-  gap: var(--space-4);
-  align-items: center;
 }
 
 /* ─── Press card — tinted quote + publication ────────────── */
@@ -1571,8 +1500,6 @@ button {
 
   .split { grid-template-columns: 1fr; }
 
-  .note-aside { grid-template-columns: 1fr; }
-
   .press { grid-template-columns: 1fr; text-align: left; }
   .press__publication { font-size: 1.75rem; }
 }
@@ -1586,7 +1513,6 @@ button {
 }
 
 .lid-link:focus-visible,
-.tile:focus-visible,
 .archive-item:focus-visible {
   outline-offset: 4px;
 }
@@ -1736,8 +1662,6 @@ summary:focus-visible {
     --section-pad-x: var(--mob-content-margin);
     padding-block: var(--space-3);
   }
-
-  .range { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 
   .ingredients { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 

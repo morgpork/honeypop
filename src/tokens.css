@@ -44,13 +44,8 @@
      Kept separate from site serif so the bifurcation is honest */
   --font-lid: 'Space Grotesk', 'Helvetica Neue', system-ui, sans-serif;
 
-  /* Soft tile tints (Ffern-style — soft-colour backgrounds, dark text) */
-  --tile-cream: #f5ead4;
+  /* Soft tint (Ffern-style — soft-colour background, dark text) */
   --tile-sage: #d9e0ce;
-  --tile-peach: #f2d9c7;
-  --tile-dusk: #d7d1d9;
-  --tile-mint: #cfe0d6;
-  --tile-rose: #ecd4d1;
 
   /* Typography — Ffern uses ONE serif for body + display.
      Newsreader (SIL OFL) stands in for ffern.co's proprietary FfernType. */
