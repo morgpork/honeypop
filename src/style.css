@@ -1247,14 +1247,29 @@ button {
 .lid--lg { --lid-scale: 1; }
 .lid--xl { --lid-scale: 1.4; }
 
-/* Grid of all six lids */
+/* Grid of all six lids. They wrap to fit, like .range--lids: three 280px
+   lids need 904px and the widest column is 804px. */
 .lid-grid {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  gap: var(--space-4);
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  justify-items: center;
+  gap: var(--space-4);
   margin: var(--space-6) 0;
+}
+
+/* One lid at 1.4x beside its band notes. Below 960px they stack and the lid
+   drops to 1.0x, since at 392px wide it would not fit a phone. */
+.lid-anatomy {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: var(--space-6);
+  align-items: center;
+  margin-top: var(--space-4);
+}
+
+@media (max-width: 959px) {
+  .lid-anatomy { grid-template-columns: minmax(0, 1fr); }
+  .lid-anatomy .lid { --lid-scale: 1; justify-self: center; }
 }
 
 /* Palette swatch strip under each lid */
