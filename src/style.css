@@ -1470,6 +1470,19 @@ button {
   max-width: var(--measure);
 }
 
+/* ─── Below 960px: two-column blocks stack ──────────────── */
+
+/* Phones need this as much as tablets; it used to sit in the tablet block
+   only, so below 768 these stayed two ~150px columns. minmax(0, 1fr)
+   rather than 1fr, or a placeholder's min-height, turned into a minimum
+   width by its aspect ratio, stretches the column past the screen. */
+@media (max-width: 959px) {
+  .split { grid-template-columns: minmax(0, 1fr); }
+
+  .press { grid-template-columns: minmax(0, 1fr); text-align: left; }
+  .press__publication { font-size: 1.75rem; }
+}
+
 /* ─── Tablet (768–959px): keep the Ffern sidebar chassis ─── */
 
 @media (min-width: 768px) and (max-width: 959px) {
@@ -1497,11 +1510,6 @@ button {
   }
 
   .hero__media { min-height: 320px; }
-
-  .split { grid-template-columns: 1fr; }
-
-  .press { grid-template-columns: 1fr; text-align: left; }
-  .press__publication { font-size: 1.75rem; }
 }
 
 /* ─── Focus-visible (keyboard a11y) ─────────────────────── */
