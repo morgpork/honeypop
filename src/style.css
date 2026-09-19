@@ -416,8 +416,11 @@ button {
 
 /* ─── Section + meta-label ───────────────────────────────── */
 
+/* Breakpoints change --section-pad-x rather than the padding itself, so
+   anything that bleeds to the section edge (.archive) stays in step. */
 .section {
-  padding: var(--space-4) var(--desk-content-margin);
+  --section-pad-x: var(--desk-content-margin);
+  padding: var(--space-4) var(--section-pad-x);
   border-bottom: 1px solid var(--hairline);
 }
 
@@ -505,6 +508,10 @@ button {
   padding: var(--space-3);
   min-height: 200px;
   aspect-ratio: 4 / 3;
+  /* aspect-ratio turns min-height into a minimum width (the 340px-tall film
+     still at 16:9 needs 604px), which pushed placeholders off narrow screens.
+     Capping the width makes the ratio give way to min-height instead. */
+  max-width: 100%;
 }
 
 .image-placeholder--square { aspect-ratio: 1; }
@@ -620,6 +627,18 @@ button {
   gap: 1px;
   background: var(--hairline);
   margin-top: var(--space-3);
+}
+
+/* Lids are fixed-size objects, so wrap them to fit the column rather than
+   fixing a column count: three across at desktop, fewer where it narrows.
+   This lives here, not in page <style> blocks, because the build emits this
+   stylesheet after those blocks, so .range used to win there. */
+.range--lids {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-3);
+  background: transparent;
 }
 
 .tile {
@@ -940,8 +959,13 @@ button {
   gap: var(--space-3);
   overflow-x: auto;
   padding: var(--space-3) 0 var(--space-4);
-  margin: 0 calc(-1 * var(--desk-content-margin));
-  padding-inline: var(--desk-content-margin);
+  /* Bleed to the section edges so the strip scrolls edge to edge. A fixed
+     48px bleed overshot the 20px phone padding and widened the page.
+     scroll-padding keeps snapping from scrolling past the inset, which put
+     the first item against the edge instead of in line with the section. */
+  margin: 0 calc(-1 * var(--section-pad-x));
+  padding-inline: var(--section-pad-x);
+  scroll-padding-inline: var(--section-pad-x);
   scroll-snap-type: x mandatory;
   scrollbar-width: thin;
   scrollbar-color: var(--hairline) transparent;
@@ -1534,7 +1558,7 @@ button {
 
   .main { max-width: 100%; }
 
-  .section { padding: var(--space-4) var(--space-3); }
+  .section { --section-pad-x: var(--space-3); }
 
   .hero__card {
     position: static;
@@ -1708,7 +1732,10 @@ summary:focus-visible {
     padding: 0.5rem 0.75rem;
   }
 
-  .section { padding: var(--space-3) var(--mob-content-margin); }
+  .section {
+    --section-pad-x: var(--mob-content-margin);
+    padding-block: var(--space-3);
+  }
 
   .range { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 
